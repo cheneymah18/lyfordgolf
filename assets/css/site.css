@@ -1,0 +1,32 @@
+/* 
+   +--------------------------------+
+   | Override styles by Matt DePero |
+   | mattdepero@gmail.com           |
+   +--------------------------------+
+*/
+
+/* Mobile Style Overrides */
+@media (max-width: 576px) {
+
+	.section-header .parallax {
+		height: 100vh;
+	}
+
+	.section-header .content h1 {
+		font-size: 3.5em;
+	}
+}
+
+/* Desktop Style Overrrides */
+@media (min-width: 992px) {
+
+	.section-header .content h1 {
+		font-size: 4.5em;
+	}
+}
+
+
+
+.section-header .content h1 {
+	line-height: 1.1;
+}
