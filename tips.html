@@ -1,0 +1,86 @@
+---
+layout: page
+title: Golf Tips
+bg-image: bg-tips.jpg
+category: learn
+---
+
+
+
+<div class="section section-our-clients-freebie">
+    <div class="container">
+        <div class="text-center">
+            <h5 class="subtitle text-gray">Improve Your Game Today With</h5>
+            <h2>Free Online Tips</h2>
+            <div class="separator separator-danger"> <img src="/assets/img/golf-red.png" alt="Golfer Icon"> </div>
+            <p class="description">
+                <b>Written by Keith Lyford</b><br/>
+                <em>Illustrated by Phil Franke</em>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="section section-flush">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-offset-1">
+                <h4 class="subtitle hidden-xs hidden-sm">Select a Tip...</h4>
+                <div id="tips-desktop-menu" class="vertical-menu hidden-xs hidden-sm" role="tablist">
+                    {% for image in site.static_files %}
+                        {% if image.path contains 'img/tips' %}
+                            <a href="#{{ image.path | remove: "/assets/img/tips/" | remove: ".jpg" | remove: ".gif" | remove: ".png" | remove: ".jpeg"}}" role="tab" data-toggle="tab">
+                                {{image.path | remove: "/assets/img/tips/" | remove: ".jpg" | remove: ".png" | remove: ".gif" | remove: ".jpeg" | replace: "_", " " | replace: "-", " "}}
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <select id='tips-mobile-select' class="form-control visible-xs visible-sm">
+                    {% for image in site.static_files %}
+                        {% if image.path contains 'img/tips' %}
+                            <option value='{{ image.path | remove: "/assets/img/tips/" | remove: ".jpg" | remove: ".gif" | remove: ".png" | remove: ".jpeg"}}'>
+                                {{image.path | remove: "/assets/img/tips/" | remove: ".jpg" | remove: ".png" | remove: ".gif" | remove: ".jpeg" | replace: "_", " " | replace: "-", " "}}
+                            </option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-8 col-lg-7">
+                <div class="tab-content">
+                    {% assign first = 1 %}
+                    {% for image in site.static_files %}
+                        {% if image.path contains 'img/tips' %}
+                            <div class="tab-pane fade{% if first == 1 %} in active {% endif %}" id="{{ image.path | remove: "/assets/img/tips/" | remove: ".jpg" | remove: ".gif" | remove: ".png" | remove: ".jpeg"}}">
+                                {% assign first = 0 %}
+                                <img class="img img-responsive" src="{{ image.path }}" alt="{{image.path | remove: "/assets/img/tips/" | remove: ".jpg" | remove: ".png" | remove: ".gif" | remove: ".jpeg" | replace: "_", " " | replace: "-", " "}}">
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section section-small section-get-started">
+    <div class="parallax filter">
+        <div class="image"
+            style="background-image: url('/assets/img/callout6.jpg')">
+        </div>
+        <div class="container">
+            <div class="title-area">
+                <h2 class="text-white">Are You Ready to Learn from the Best?</h2>
+                <div class="separator line-separator"> <img src="/assets/img/golf.png" alt="Golfer Icon"> </div>
+                <p class="description">
+                    Take these tips to the next level by signing up for a lesson or clinic with Keith. <br/>
+                    Register by reaching out with the link below.
+                </p>
+            </div>
+
+            <div class="button-get-started">
+                <a href="/contact/" class="btn btn-danger btn-fill btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
