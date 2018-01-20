@@ -27,6 +27,64 @@
 
 
 
+/* 
+   College Logo Styles
+   from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
+*/
+.college_container {
+	position: relative;
+}
+.college_container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.college_container:hover .overlay {
+	opacity: 1;
+}
+.college_container h2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.college_container img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+.college_container .force-square {
+	width:100%;
+	padding-bottom: 100%;
+}
+
+
+/* cell based table hovering override
+	see: https://stackoverflow.com/questions/25531028/twitter-bootstrap-3-apply-hover-only-on-table-cells
+*/
+.table-cell-hover tr td{
+    background-color: white !important;
+}
+.table-cell-hover td:hover, .table-hover>tr>td:hover{
+    background-color: #f5f5f5 !important;
+}
+
+
+
 .section-header .content h1 {
 	line-height: 1.1;
 }
