@@ -40,3 +40,26 @@
 .container-even {
 	margin-top: 50px !important;
 }
+
+
+/* Vertical Menu styling from
+https://www.w3schools.com/howto/howto_css_vertical_menu.asp */
+.vertical-menu {
+    width: 100%;
+}
+.vertical-menu a {
+	color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    border-top: solid 1px grey;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a:active {
+    background-color: #e78b90;
+    color: white;
+}
