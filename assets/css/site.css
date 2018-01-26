@@ -119,6 +119,20 @@
 	border: 1px solid #777777;
 }
 
+
+.lined-menu li {
+  border-bottom: 1px solid #444;
+}
+.lined-menu li:first-child {
+  /*border-top: 1px solid #444;*/
+}
+.lined-menu li:last-child {
+  border-bottom: none;
+}
+.lined-menu {
+  border-collapse: collapse;
+}
+
 /* Vertical Menu styling from
 https://www.w3schools.com/howto/howto_css_vertical_menu.asp */
 .vertical-menu {

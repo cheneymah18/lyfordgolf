@@ -1,78 +1,70 @@
     <footer class="footer footer-big footer-color-black" data-color="black">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-sm-3">
+                <div class="col-lg-2 col-sm-2">
                     <div class="info">
-                        <h5 class="title">Links</h5>
+                        <h5 class="title">All Pages</h5>
                         <nav>
                             <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Lessons</a>
-                                </li>
-                                <li>
-                                    <a href="#">Videos</a>
-                                </li>
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
+                                {% for page in site.pages %}
+                                    <li>
+                                        <a href="{{page.url}}">{{page.title}}</a>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </nav>
                     </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="col-lg-3 col-lg-offset-1 col-md-offset-1 col-sm-3">
                     <div class="info">
-                        <h5 class="title"> Learn More</h5>
+                        <h5 class="title">Learn More</h5>
                          <nav>
-                            <ul>
+                            <ul class="lined-menu">
                                 <li>
-                                    <a href="#">Links To</a>
+                                    <a href="https://www.golfintahoe.com/golf-academy" target="_BLANK">
+                                        Golf Academy At Old Greenwood
+                                    </a>
+                                    <li>
+                                    <a href="http://www.whitneyoaksgolf.com/club/scripts/clubpers/view_clubpers.asp?SRC=L&PID=44757&GRP=26127&NS=PUBLIC" target="_BLANK">
+                                        Whitney Oaks Golf Club
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="#">Other Usefull</a>
-                                </li>
-                                <li>
-                                    <a href="#">Websites Could</a>
-                                </li>
-                                <li>
-                                    <a href="#">Go Here</a>
-                                </li>
-                                <li>
-                                    <a href="#">For People</a>
+                                    <a href="https://www.loscaballerosgolf.com/" target="_BLANK">
+                                        Los Caballeros Golf Club
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-3">
+                <div class="col-lg-3 col-md-4 col-sm-5">
                     <div class="info">
                         <h5 class="title">Directions</h5>
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="#">
-                                        <i class="fa fa-map"></i> <b>Rawiga Country Club</b> <br/>
-                                        2057 Sparrow Drive <br/>
-                                        Neat Place, OH 45056
+                                    <a href="https://www.google.com/maps/dir/''/Whitney+Oaks+Golf+Club/data=!4m5!4m4!1m0!1m2!1m1!1s0x809b18b8e507fd45:0x24dec6bd66e65165?sa=X&ved=0ahUKEwjQ0aLOgvXYAhXS7VMKHXJjABsQ9RcIjgEwDg" target="_BLANK">
+                                        <i class="fa fa-map"></i> <strong>Whitney Oaks Golf Club</strong> <br/>
+                                        2305 Clubhouse Drive <br/>
+                                        Rocklin, CA  95765 
                                     </a>
+                                    <a href="tel:9164123714"><i class="fa fa-phone"></i> (916)412-3714</a>
                                     <hr class="hr-small">
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="fa fa-map"></i> <b>Central Golf Academy</b> <br/>
-                                        252 Brookpoint Circle <br/>
-                                        Wadsworth, OH 45056
+                                    <a href="https://www.google.com/maps/dir/''/old+greenwood+golf+academy/@39.343937,-120.212431,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x809960116dffdae9:0x9222cff5674073bf!2m2!1d-120.142391!2d39.343958" target="_BLANK">
+                                        <i class="fa fa-map"></i> <strong>Old Greenwood Golf Academy</strong> <br/>
+                                        12915 Fairway Drive <br/>
+                                        Truckee CA 96160
                                     </a>
+                                    <a href="tel:5305502670"><i class="fa fa-phone"></i> (530)550-2670</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
-                <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="col-lg-2 col-lg-offset-1 col-sm-2">
                     <div class="info">
                         <h5 class="title">Follow us on</h5>
                         <nav>
@@ -83,18 +75,8 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="btn btn-social btn-dribbble btn-simple">
-                                        <i class="fa fa-dribbble"></i> Dribbble
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="#" class="btn btn-social btn-twitter btn-simple">
-                                        <i class="fa fa-twitter"></i> Twitter
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn btn-social btn-reddit btn-simple">
-                                        <i class="fa fa-google-plus-square"></i> Google+
+                                        <i class="fa fa-instagram"></i> Instagram
                                     </a>
                                 </li>
                             </ul>
@@ -102,9 +84,9 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <hr style="margin-top: 10px;">
             <div class="copyright">
-                 © <script> document.write(new Date().getFullYear()) </script> Lyford Golf, site by <a href="mailto:mattdepero@gmail.com" style="text-decoration: underline;">Matt DePero</a>
+                 © <script> document.write(new Date().getFullYear()) </script> Lyford Golf | Site by <a href="http://mattdepero.com" target="_BLANK" style="text-decoration: underline;">Matt DePero</a>
             </div>
         </div>
     </footer>
