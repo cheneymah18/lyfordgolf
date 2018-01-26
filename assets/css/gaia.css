@@ -802,28 +802,28 @@ a,
 }
 
 .form-control::-moz-placeholder {
-  color: #DDDDDD;
+  color: #BBB;
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-font-smoothing: antialiased;
 }
 
 .form-control:-moz-placeholder {
-  color: #DDDDDD;
+  color: #BBB;
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-font-smoothing: antialiased;
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #DDDDDD;
+  color: #BBB;
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-font-smoothing: antialiased;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #DDDDDD;
+  color: #BBB;
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-font-smoothing: antialiased;
@@ -1742,7 +1742,7 @@ a,
   margin: 0;
   padding: 0;
   border-radius: 4px;
-  display: block;
+  /*display: block;*/
   z-index: 9000;
   position: absolute;
   opacity: 0;
