@@ -15,6 +15,7 @@
 	.section-header .content h1 {
 		font-size: 3.5em;
 	}
+
 }
 
 /* Desktop Style Overrrides */
@@ -84,6 +85,10 @@
 }
 
 
+.form-control {
+	margin-bottom: 0px; /* Gaia theme override */
+}
+
 
 .section-header .content h1 {
 	line-height: 1.1;
@@ -99,6 +104,20 @@
 	margin-top: 50px !important;
 }
 
+.form-group {
+	text-align: left; /* Gaia theme override */
+}
+.form-group .dropdown-toggle {
+	height: 40px;
+	border: 1px solid #E3E3E3;
+	color: #333;
+}
+.form-group option {
+	background-color: white;
+}
+.form-group .dropdown-toggle:active {
+	border: 1px solid #777777;
+}
 
 /* Vertical Menu styling from
 https://www.w3schools.com/howto/howto_css_vertical_menu.asp */
