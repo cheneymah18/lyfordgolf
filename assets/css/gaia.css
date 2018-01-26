@@ -2763,10 +2763,10 @@ a,
     padding: 0 !important;
   }
   .section-header .parallax, .section-header .static-image {
-    height: 80vh;
+    /*height: 80vh;*/
   }
   .section-header .parallax:after, .section-header .static-image:after {
-    height: 80vh;
+    /*height: 80vh;*/
   }
   .section-header .content {
     top: 50%;
