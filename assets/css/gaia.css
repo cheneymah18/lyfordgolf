@@ -1228,7 +1228,7 @@ a,
 .section-small .static-image .image,
 .section-get-started .parallax .image,
 .section-get-started .static-image .image {
-  height: 100vh !important;
+  /*height: 100vh !important;*/
 }
 
 .section-info {

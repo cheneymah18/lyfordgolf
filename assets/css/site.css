@@ -27,6 +27,20 @@
 }
 
 
+.text-footer {
+  padding-top: 30px;
+  margin-bottom: -40px;
+  font-style: italic;
+}
+.text-footer a {
+  font-style: normal;
+}
+
+
+.image {
+  height: 100% !important; /* theme override */
+}
+
 
 /* 
    College Logo Styles
@@ -67,6 +81,8 @@
 	max-width: 100%;
 	max-height: 100%;
 	height: auto;
+  padding: 15px;
+  min-width: 100%;
 }
 .college_container .force-square {
 	width:100%;
