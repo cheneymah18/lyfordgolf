@@ -3,6 +3,7 @@
     <link rel="apple-touch-icon" sizes="96x96" href="/assets/img/favicon.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon.png">
     <meta name="author" content="Matt DePero http://mattdepero.com">
+    {% if page.description %}<emta name="description" content="{{page.description}}">{% endif %}
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>{{ page.title }} | {{ site.title }} | {{ site.tagline }}</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -17,4 +18,15 @@
 
     <!-- site override styles -->
     <link href="/assets/css/site.css" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59462120-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-59462120-4');
+    </script>
+
 </head>
