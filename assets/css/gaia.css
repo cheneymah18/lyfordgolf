@@ -2834,7 +2834,7 @@ a,
   }
 
   .wrapper {
-    text-align: center !important;
+    /*text-align: center !important; Theme bug, overrided*/
     overflow: hidden;
   }
 
