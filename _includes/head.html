@@ -28,5 +28,11 @@
 
       gtag('config', 'UA-59462120-4');
     </script>
+    {% if page.event_code %}
+    <!-- Event snippet for Page view conversion page -->
+    <script>
+      gtag('event', 'conversion', {'send_to': '{{ page.event_code }}'});
+    </script>
+    {% endif %}
 
 </head>
